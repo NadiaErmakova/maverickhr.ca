@@ -510,12 +510,12 @@ $(document).ready(function () {
                         contentType: 'application/json',
                         data: JSON.stringify(request),
                         success: function (result) {
-                            $form.find(".zform-feedback").html(result);
+                            $form.find(".zform-feedback").html(result && result.message || result);
                             $submit.val(submitText);
                             $form.trigger("reset");
                         },
                         error: function (result) {
-                            $form.find(".zform-feedback").html(result);
+                            $form.find(".zform-feedback").html(result && result.message || result);
                             $submit.val(submitText);
                         },
                     });
