@@ -507,7 +507,8 @@ $(document).ready(function () {
                         type: 'post',
                         url: 'assets/php/form-processor.php',
                         dataType: 'json',
-                        data: request,
+                        contentType: 'application/json',
+                        data: JSON.stringify(request),
                         success: function (result) {
                             $form.find(".zform-feedback").html(result);
                             $submit.val(submitText);
