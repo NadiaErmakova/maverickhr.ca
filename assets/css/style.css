@@ -8163,6 +8163,7 @@ h1 {
 h2, h3 {
   letter-spacing: -0.15rem;
 	color: #f36b21;
+}
 
 h4, h5 {
   letter-spacing: -0.05rem;
@@ -8383,4 +8384,13 @@ p {
     color: #212529;
     background-color: #f36b21;
     border-color: #f36b21;
+}
+	
+.btn-orange{
+	color: #fff !important;
+	background-color: #f26b21 !important;
+	border-color: #f26b21 !important;
+}
+.btn-orange:hover{
+	color: #fff !important;
 }
