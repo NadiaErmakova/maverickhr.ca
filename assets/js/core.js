@@ -478,29 +478,34 @@ $(document).ready(function () {
                         var fileMeta = { "content": "", "type": file.type, "filename": file.name };
                         var fileDfd = jQuery.Deferred();
 
-                        reader.readAsDataURL(file);
                         reader.onload = function () {
                             // example
                             // data:text/plain;base64,OTk4MDk=
                             var idx = reader.result.indexOf(',')
                             if (idx > 0) {
                                 fileMeta.content = reader.result.substr(idx + 1);
+                                fileDfd.resolve();
+                            } else {
+                                fileDfd.reject(new Error("File has invalid content"));
                             }
-                            fileDfd.resolve();
+                            
                         };
                         reader.onerror = function (error) {
                             fileDfd.reject(error);
                         };
                         files.push(fileMeta)
                         filesPromises.push(fileDfd);
+
+                        // read after we 
+                        reader.readAsDataURL(file);
                     }
                 });
 
                 $.when(filesPromises).then(function () {
                         return { "data": data, "files": files };
-                    },
-                    function (e) {
+                    }, function (e) {
                         console.info("Error: ", e);
+                        alert("We were unable to proceed with your request.\r\n Please try again later.\r\n Error: Clinet - 001")
                     })
                 .then(function (request) {
                     $.ajax({
