@@ -8193,7 +8193,7 @@ hr.muted {
   font-weight: 600;
 }
 
-p {
+p, li {
   color: #6a6a6a;
 }
 
