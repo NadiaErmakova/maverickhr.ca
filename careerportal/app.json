@@ -9,10 +9,10 @@
     "rtf",
     "odt"
   ],
-  "companyName": "[ COMPANY NAME HERE ]",
-  "companyLogoPath": "",
-  "companyUrl": "",
-  "careersUrl": "",
+  "companyName": "MaverickHR",
+  "companyLogoPath": "/assets/images/maverikhr_logo_grey_orange.png",
+  "companyUrl": "https://www.maverickhr.ca/",
+  "careersUrl": "https://www.maverickhr.ca/careerportal/",
   "defaultLocale": "en-US",
   "supportedLocales": [
       "en-US",
@@ -32,9 +32,9 @@
   "maxUploadSize": 5242880,
   "service": {
     "batchSize": 500,
-    "corpToken": "[ CORP TOKEN HERE ]",
+    "corpToken": "86VODD",
     "port": null,
-    "swimlane": "[ SWIMLANE HERE ]",
+    "swimlane": "SL33",
     "fields": [
       "id",
       "title",
