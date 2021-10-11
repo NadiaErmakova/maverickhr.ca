@@ -34,7 +34,7 @@
     "batchSize": 500,
     "corpToken": "86VODD",
     "port": null,
-    "swimlane": "SL33",
+    "swimlane": "33",
     "fields": [
       "id",
       "title",
@@ -86,6 +86,6 @@
   "privacyConsent": {
     "consentCheckbox": false,
     "sidebarLink": false,
-    "privacyPolicyUrl": "/privacy"
+    "privacyPolicyUrl": "/privacy-policy"
   }
 }
