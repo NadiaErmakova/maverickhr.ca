@@ -2,33 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Career Portal</title>
-  <base href=".">  <link rel="stylesheet" href="./static/custom.css" />
-
+  <title>MaverickHR - Career Portal</title>
+  <base href=".">  
+  <link rel="stylesheet" href="./static/custom.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="stylesheet" href="styles.css"></head>
+	<link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicons/favicon.ico">
+  <link rel="stylesheet" href="styles.css"></head>
+
+  <!--main site-->
+  <link href="../assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../assets/css/style.css?v=1" rel="stylesheet">
+	<link href="../assets/css/custom.css" rel="stylesheet">
 <body>
+
+  <main>
+    <section class="background-primary py-3 d-none d-sm-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-auto d-none d-lg-block"><span class="fa fa-map-marker color-warning fw-500 icon-position-fix"></span>
+                    <a href="https://g.page/maverickhr?share" target="_blank"><p class="ml-2 mb-0 fs--1 d-inline color-white fw-700">5811 Cooney Rd, Richmond, BC</p></a>
+                </div>
+                <div class="col-auto ml-md-auto order-md-2 d-none d-sm-block"><span class="fa fa-clock-o color-warning fw-800 icon-position-fix"></span>
+                    <p class="ml-2 mb-0 fs--1 d-inline color-white fw-700">Monday-Friday, 7:00 am - 7:00 pm</p>
+                </div>
+                <div class="col-auto"><span class="fa fa-phone color-warning fw-800 icon-position-fix"></span><a class="ml-2 mb-0 fs--1 d-inline color-white fw-700" href="tel:2123865575">1-778-385-0203</a></div>
+            </div>
+        </div>
+    </section>
+    <div class="znav-white znav-container sticky-top navbar-elixir" id="znav-container">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg" >
+                <a class="navbar-brand overflow-hidden pr-3" href="../">
+                <img src="../assets/images/maverikhr_logo_grey_orange.png" alt="" width="80"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger hamburger--emphatic">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto fs-1 fw-600">
+                        <li><a href="../">home</a>
+                        </li>
+                        <li><a href="javascript:void()">purpose</a>
+                            <ul class="dropdown fs-0">
+                                <li><a href="../about">about us</a></li>						
+                                <li><a href="../inclusive-recruitment">inclusive recruitment</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../employers">employers</a>
+                        </li>
+                        <li><a href="../job-seekers">job seekers</a>
+                        </li>
+                        <li><a href="../blog">blog</a>
+                        </li>
+                        <li><a href="../contact">contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+  </main>
+
+
+
   <app-root><novo-loading style="position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;display: flex;justify-content: center;align-items: center;">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </novo-loading>
-</app-root>
-<script>
-  (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-</script>
-<script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="main.js"></script></body>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </novo-loading>
+  </app-root>
+  <script>
+    (function(i, s, o, g, r, a, m) {
+              i['GoogleAnalyticsObject'] = r;
+              i[r] = i[r] || function() {
+                  (i[r].q = i[r].q || []).push(arguments)
+              }, i[r].l = 1 * new Date();
+              a = s.createElement(o),
+                  m = s.getElementsByTagName(o)[0];
+              a.async = 1;
+              a.src = g;
+              m.parentNode.insertBefore(a, m)
+          })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+  </script>
+  <script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="main.js"></script>
+
+  <!--main site-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../assets/lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/js/core.js?v=3"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
 </html>
