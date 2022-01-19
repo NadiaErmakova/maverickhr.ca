@@ -3041,6 +3041,11 @@ input.inputfile[type='file'] {
   margin-right: 8px;
 }
 
+/*careerportal: fix upload resume (w/o this fix click does not work)*/
+novo-file-input .file-input-group input[type=file] {  
+  z-index: 1000;
+}
+
 .ios-toggle, .ios-toggle:active {
   height: 0;
   width: 0;
