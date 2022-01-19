@@ -3031,7 +3031,7 @@ label, input, textarea, legend {
   font-family: "Montserrat", sans-serif;
 }
 
-input[type='file'] {
+input.inputfile[type='file'] {
   display: none;
 }
 
