@@ -3031,7 +3031,7 @@ label, input, textarea, legend {
   font-family: "Montserrat", sans-serif;
 }
 
-input[type='file'] {
+input.inputfile[type='file'] {
   display: none;
 }
 
@@ -3039,6 +3039,11 @@ input[type='file'] {
   fill: currentColor;
   vertical-align: middle;
   margin-right: 8px;
+}
+
+/*careerportal: fix upload resume (w/o this fix click does not work)*/
+novo-file-input .file-input-group input[type=file] {  
+  z-index: 1000;
 }
 
 .ios-toggle, .ios-toggle:active {
