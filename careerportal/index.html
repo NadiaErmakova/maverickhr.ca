@@ -20,14 +20,20 @@
     <link href="../assets/css/style.css?v=4" rel="stylesheet">
     <link href="../assets/css/custom.css" rel="stylesheet">
     <style>
-        /* Fixes fix for careerportal */
+        /* Fixes for careerportal */
         
         /* Page scroll */
         body {
             overflow: auto !important;
         }
 
-        /* Document scroll */
+        /* Jobs list scroll */
+        .frame[_ngcontent-serverApp-c1] .list[_ngcontent-serverApp-c1] {
+
+            max-height: none !important;
+        }
+
+        /* Job document scroll */
         .background[_ngcontent-serverApp-c1]  {
             height: auto !important; 
             max-height: none !important;
