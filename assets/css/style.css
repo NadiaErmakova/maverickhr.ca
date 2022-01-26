@@ -8401,14 +8401,3 @@ p, li {
 .btn-orange:hover{
 	color: #fff !important;
 }
-
-
-/* fix for careerportal */
-.background[_ngcontent-serverApp-c1] 
-{
-  height: auto !important; 
-  max-height: none !important;
-}
-novo-modal-container {
-  z-index: 2000 !important; 
-}
